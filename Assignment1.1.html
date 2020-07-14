@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>
+        My first Assignment
+    </title>
+</head>
+<body>
+    
+    <button type="button" onclick="myFunction(),myFunct()">Click here to view day and time</button>
+    <p id='sample'></p>
+    <p id='demo'></p>
+    
+
+<script>
+        function myFunction() {
+        var d = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+
+        var n = weekday[d.getDay()]; 
+        document.getElementById('sample').innerHTML="Today is: "+n+"";
+}
+        function addZero(i) {
+         if (i < 10) {
+          i = "0" + i;
+        }
+  return i;
+} 
+function myFunct() {
+  var d = new Date();
+  var h = addZero(d.getHours());
+  var m = addZero(d.getMinutes());
+  var s = addZero(d.getSeconds());
+  var x = document.getElementById("demo").innerHTML="Current time is: "+h+" PM:" + m + ":" + s+" ";
+
+
+
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
