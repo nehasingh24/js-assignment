@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Difference between var let and const:</h1>
+    <h3>Var is a type of a container.It follows Functional scope</h3>
+    <h3>Let maintains the scope of the variable it keeps the value of the variable inside local function of block. it follows block Scope</h3>
+    <h3>Const is constant as the name means it remains same its value remains same and cannit be changed</h3>
+    <script>
+        var a=38;
+        var b=58;
+        varc=a+b;
+        console.log("Var a outside block is "+a)
+        {
+            let a=5;
+            let b=8;
+            let c=a+b;
+            console.log("Inside block let a ="+a);
+            console.log(a+" + "+b+" = "+c);
+        }
+        const c=90;
+        console.log("Const c outside block is "+c)
+    </script>
+</body>
+</html>

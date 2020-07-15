@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            font-size: xx-large;
+            font-style:italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Various methods in console Function are </h1>
+    <ol>
+        <li>console.log</li>
+            <p>This console Function displays the content inside  the console.This is a type of print statement which is most used by the programmer.</p>
+        <li>console.error</li>
+            <p>This Function displays the error in the program inside the console in the web.</p>
+        <li>console.warn</li>
+            <p>This Function is used to give away a warning also inside the console</p>
+        <li>console.table</li>
+            <p>This type of Function is used to display the elements in the the table format.</p>
+        <li>console.time</li>
+            <p>This Function keeps a track of time that how much time the program takes to execute the code.</p>
+        <li>console.timeEnd</li>
+            <p>This Function will tell the end time of the program and display. it is kept at the end of the program.</p>
+    </ol>
+    <script>
+        var a={name:"neha", age :19,city:"Mumbai"};
+        console.time("time taken: ");
+        console.log("I display.");
+        console.error("I display error.");
+        console.warn("I display warning");
+        console.table(a);
+        console.timeEnd("Time Taken : ");
+    </script>
+</body>
+</html>
