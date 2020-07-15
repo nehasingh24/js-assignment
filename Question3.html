@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Data Types</h1>
+    <h3>
+        Six Data Types that are primitives, checked by typeof operator:
+undefined : typeof instance === "undefined"<br>
+Boolean : typeof instance === "boolean"<br>
+Number : typeof instance === "number"<br>
+String : typeof instance === "string"<br>
+BigInt : typeof instance === "bigint"<br>
+Symbol : typeof instance === "symbol"<br>
+null : typeof instance === "object".<br> Special primitive type having additional usage for it's value: if object is not inherited, then null is shown;<br>
+Object : typeof instance === "object".<br> Special non-data but structural type for any constructed object instance also used as data structures: new Object, new Array, new Map, new Set, new WeakMap, new WeakSet, new Date and almost everything made with new keyword;<br>
+Function non data structure, though it also answers for typeof operator: typeof instance === "function". <br>This answer is done as a special shorthand for Functions, though every Function constructor is derived from Object constructor
+    </h3>
+    <script>
+           //JavaScript variables can hold many data types: numbers, strings, objects and more:
+            
+           var length = 16;                               // Number :- Number can be float or integers
+            var lastName = "Johnson";                      // String :- Strings takes the characters
+            var x = {firstName:"John", lastName:"Doe"};    // Object :- Objects consists of more than one value of the variable
+
+            //boolean :- Boolean consists of two value,either true or false
+            var a = 5;
+            var b = 5;
+            var c = 6;
+            (x == y)       // Returns true
+            (x == z)       // Returns false 
+
+            //Array :- Array consists of more than one value. It consists of list of similar values. 
+            var cars = ["Saab", "Volvo", "BMW"];    
+
+            //undefined :- Undefined variables does not contain any value during decalaration. User can declare any value to it in between the program.
+            var car;    // Value is undefined, type is undefined 
+
+            //Empty Values 
+            var ca = "";    // The value is "", the typeof is "string"
+
+            //Null
+            var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+            person = null;    // Now value is null, but type is still an object
+    </script>
+</body>
+</html>
