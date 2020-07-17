@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>assignment</title>
+    </head>
+    <body bgcolor="black">
+         <script>
+           let marks= prompt("Enter The Marks Of Student : " );
+           if(marks >= 70){
+               console.log("Marks Are "+marks+" and the Grade is A");
+           }
+           else if(marks >= 50){
+               console.log("Marks Are "+marks+" and the Grade is B");
+           }
+           else{
+               console.log("Marks Are "+marks+" and the Grade is C");
+           } 
+      
+        switch(marks){
+            case (35>marks<50): console.log("Marks Are "+marks+" and the Grade is C");
+                            break;
+            case (marks>=55): console.log("Marks Are "+marks+" and the Grade is B");
+                            break;
+            case (marks>=75): console.log("Marks Are "+marks+" and the Grade is A");
+                            break;
+            default:console.log("FAIL");
+        }
+           
+           
+           
+           //Using Switch
+           /*
+           
+           
+           
+           
+           
+           */
+           
+              
+           //Using Ternary OPerator: 
+          /* let result = (marks>=70) ? 'The Grade is A':
+                        (marks >= 50) ? 'The Grade is B' :
+                        'The Grade is C';
+            console.log(result);
+        */
+
+
+        </script>
+    </body>
+</html>
