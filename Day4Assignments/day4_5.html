@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>First JS</title>
+    </head>
+    <body>
+        <script>
+            let com;
+            sal=prompt('Enter the Sales made by the Employees this year: ');
+
+            switch(true){
+            case (sal> 0 && sal<5000) :
+                com= sal *0.02;
+                console.log(`The total commission is ${com}`);
+                break;
+
+            case (sal>5000 && sal<10000):
+                com= sal *0.05;
+                console.log(`The total commission is ${com}`);
+                break;
+            case (sal>10000 && sal<20000) :
+                com=sal* 0.7;
+                console.log(`The Total commission is ${com}`);
+                break;
+            case (sal>20000) :
+                com= sal* 0.1;
+                console.log(`The Total commission is ${com}`);
+        }
+           
+        </script>
+    </body>
+</html>

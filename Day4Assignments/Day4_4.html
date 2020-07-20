@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Answer 4 </title>
+</head>
+<body>
+    <h1>Answer 4 Calculator</h1>
+    <script>
+        let a=400,b=500;
+        let operator="%";
+        result=0;
+        switch(operator) {
+	    case '+':
+		result= a+b;
+		break;
+	    case '-':
+		result=a-b;
+		break;
+	    case '*':
+		result=a*b;
+		break;
+	    case '/':
+        result=a/b;
+        break;
+        case 'sqrt':
+        result=Math.sqrt(a);
+        case'%':
+        result=(a/b*100);//here a=marks obtained b= total marks
+	    default:
+		console.log("Invalid operation");
+    }
+    console.log(`Result = ${result} `);
+    </script>
+</body>
+</html>
