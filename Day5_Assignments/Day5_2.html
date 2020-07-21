@@ -1,0 +1,82 @@
+<html>
+<head><title>Day 2 Assignment Answer 2</title></head>
+<body>
+<h1>Answers for Answer 2 Assignment of Day2</h1>
+<script>
+class User{
+	constructor(name,age,email,coins,course){
+	this.name=name;
+	this.age=age;
+	this.email=email;
+	this.coins=[0];
+	this.courses = [0];
+	}
+	login(){
+	console.log(`${this.name} has logged in.`);
+	return this;
+	}
+	logout(){
+	console.log(`${this.name} has logged out.`);
+	return this;
+	}
+	getDetails(){
+	console.log(`Name is ${this.name}, age is ${this.age} email is ${this.email}`);
+	return this;
+	}
+}
+
+class Moderator extends User{
+    constructor(name,age,email){
+        super(name,age,email);
+    }
+addCoins(){
+	this.coins++;
+	console.log(`Coin Added now ${this.name} has ${this.coins} coins.`);
+	return this;
+	console.log(user);
+	}
+delCoins(user,coins){
+	this.coins--;
+	console.log(`Coin Deleted now ${this.name} has ${this.coins} coins.`);
+	return this;
+	console.log(user);
+	}
+}
+
+class Admin extends Moderator{
+   addCourse(user,course){
+       user.courses.push(course);
+       console.log(user);
+   }
+   delCourse(user,course){
+       user.courses.pop(course);
+       console.log(user);
+   }
+}
+
+let user1 = new User('Neha',20,'nehasingh24@gmail.com');
+let user2 = new User('Heha',20,'hasingh24@gmail.com');
+let mod = new Moderator('Berlin',24,'b@gmail.com','Moderator');
+
+let users = [user1,user2,mod];
+
+users.forEach(element => {
+    console.log(element);
+});
+
+
+user1.login().getDetails().logout();
+
+
+mod.addCoins(user1);
+mod.delCoins(user2);
+mod.addCoins(user1);
+
+Admin.addCourse(user1,'Javascript');
+Admin.addCourse(user1,'Python');
+Admin.delCourse(user1,'Python');
+
+
+</script> 
+</body>
+</html>

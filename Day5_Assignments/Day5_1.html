@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Day 5 Assignment Answer 1</title>
+</head>
+<body>
+    <h1>Day 5 Question 1 Solution</h1>
+    <h3>Go to console</h3>
+    <script>
+        let n=prompt("Enter a Positive Number:");
+        console.log("Number Entered is:"+n);
+        let arr=[0];
+        let i=Number;
+        for(i=1;i<n;i++){
+            arr.push(i);
+        }
+        console.log(arr);
+        let odd= arr.filter(el=>el%2!=0)
+        console.log(odd);
+        console.log(`Odd Numbers from the given array is ${odd}`)
+        let oddCubes= arr.filter(el=>el%2!=0).map(el=>el**3);
+        console.log(oddCubes);
+        console.log(`Cubes of Odd numbers are : ${oddCubes}`)
+    </script>
+</body>
+</html>
