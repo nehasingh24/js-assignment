@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAy 6 Answer 1</title>
+
+</head>
+<body>
+    <h1>Wait....</h1>
+    <h2>Background color will change every 5 second</h2>
+    <script>
+        let colors = ['red'];
+        setInterval(
+    function () {
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = "#"+randomColor;
+    },3000);
+
+    </script>
+</body>
+</html>

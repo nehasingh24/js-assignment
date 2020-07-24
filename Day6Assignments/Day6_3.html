@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Answe 3</title>
+    <style>
+        #dark.changeColor{
+            background-color: black;
+            color:white;
+
+        }
+    </style>
+</head>
+<body id="dark">
+    <h1 id="title">Welcome to this Website and </h1>
+    <h3 id="time"></h3>
+    <button id="btn">Dark Mode</button>
+    <script>
+//         Welcoming the user
+        let a=prompt("Welcome user please Enter your name:");
+
+        title.innerHTML += `to the family ${a}`;      
+
+
+        
+//         For the clock 
+
+        const ctime = document.getElementById('time');
+        
+        function clock(){
+            let date = new Date();
+            let time = date.        toLocaleTimeString();
+            ctime.innerHTML = time;
+        }
+        
+        clock();
+        
+        setInterval(clock,1000);
+
+//        setting the mode
+        const dark = document.getElementById('dark');
+        const button = document.getElementById('btn');
+        
+
+        
+        button.onclick = ()=>{
+            if(dark.className == 'changeColor'){
+                dark.className = '';
+                button.innerText = "Dark Mode";
+            }
+            else{
+                dark.className = 'changeColor';
+                button.innerText = "Light Mode";
+            }
+        }
+
+    </script>
+</body>
+</html>
